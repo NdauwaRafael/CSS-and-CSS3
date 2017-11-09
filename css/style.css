@@ -281,14 +281,24 @@ footer {
 .abt_img {
     width: 40%;
     height: auto;
-    border-radius: 45%;
     align-items: center;
 }
 
 #more_abt {
   background-color: #eeeeee;
   padding: 10px;
-  
+  text-align: center;
+}
+
+.footer_abt {
+   display: flex;
+}
+
+.footer_abt div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding:20px;
+  font-size: 30px;  
 }
 /*=========================================COMMON CHARACTERISTICS===========================================================================*/
 
