@@ -290,6 +290,9 @@ footer {
 .footer_abt {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: stretch;
 }
 
 .footer_abt div {
