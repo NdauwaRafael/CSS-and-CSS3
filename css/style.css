@@ -102,10 +102,12 @@ input[type="search"] {
   #menu ul li {
     list-style: none;
     display: block;
-    padding: 20px;
-    font-family: sans-serif;
-    color: #F8F8FF;
-    transition: 3s;
+    margin: 10px;
+    text-align: center;
+    background: #e57373;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 2em;
   }
 
 }
@@ -299,19 +301,66 @@ footer {
   background-color: #f1f1f1;
   margin: 10px;
   padding:20px;
-  font-size: 30px;
+  font-size: 20px;
   width: 28%;
 }
 .footer_abt div img{
-   width: 10%;
+   width: 15%;
+   padding-top: 15px;
+
 }
-/*=========================================COMMON CHARACTERISTICS===========================================================================*/
+
+.footer_abt div li{
+  list-style: none;
+}
+
+@media (max-width:850px) {
+  .footer_abt {
+     flex-direction: column;
+     padding: 10px;
+  }
+
+  .footer_abt div {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .footer_abt div li{
+    width: 100%;
+    float: left;
+  }
+
+  .about_column {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  .footer_abt div img{
+     width: 10%;
+  }
+}
+
+@media (max-width:320px) {
+  .footer_abt div li span{
+    visibility: hidden;
+  }
+
+  .footer_abt div img{
+     width: 40%;
+  }
+
+  .footer_abt div li{
+    text-align: center;
+  }
+}
+
+/*---cOMMON CHARACTERISTICS---*/
 
 /*===========================================================================
   GRID SYSTMES
 ============================================================================*/
 
-/*---cOMMON CHARACTERISTICS---*/
 * {
     box-sizing: border-box;
 }
@@ -340,3 +389,9 @@ footer {
 .col-g-10 {width: 83.33%;}
 .col-g-11 {width: 91.66%;}
 .col-g-12 {width: 100%;}
+
+@media (max-width:850px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
